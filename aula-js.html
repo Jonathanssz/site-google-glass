@@ -7,23 +7,50 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <style>
+            #btnConsertar {
+                display: none;
+                margin-top: 15px;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            #btnConsertar:hover {
+                background-color: #45a049;
+            }
+        </style>
         <script>
-            function acenderLampada() {
-                document.getElementById("lampada").src = "_imagens/lampada-acesa.jpg";
+            var quebrada = false;
+            function mudaLampada(tipo) {
+                if (!quebrada) {
+                    document.getElementById("lampada").src = "_imagens/" + tipo + ".jpg";
+                    if (tipo == 'lampada-quebrada') {
+                        quebrada = true;
+                        document.getElementById("mensagem").innerHTML = "<h2>Você quebrou a Lâmpada! Clique no botão abaixo para a trocarmos...</h2>";
+                        document.getElementById("btnConsertar").style.display = "inline-block";
+                    }
+                }
             }
-            function apagarLampada() {
+            function consertarLampada() {
+                quebrada = false;
                 document.getElementById("lampada").src = "_imagens/lampada-apagada.jpg";
-            }
-            function quebrarLampada() {
-                document.getElementById("lampada").src = "_imagens/lampada-quebrada.jpg";
+                document.getElementById("mensagem").innerHTML = "";
+                document.getElementById("btnConsertar").style.display = "none";
             }
         </script>
     </head>
     <body>
         <h1>Acenda a Lâmpada</h1>
         <img id="lampada" src="_imagens/lampada-apagada.jpg" alt="Lâmpada Apagada"
-            onmousemove="acenderLampada()"
-            onmouseout="apagarLampada()"
-            onclick="quebrarLampada()">
+            onmousemove="mudaLampada('lampada-acesa')"
+            onmouseout="mudaLampada('lampada-apagada')"
+            onclick="mudaLampada('lampada-quebrada')">
+        <div id="mensagem"></div>
+        <button id="btnConsertar" onclick="consertarLampada()">Consertar Lâmpada</button>
+        <p>Coloque o mouse sobre a lâmpada para acendê-la, tire o mouse para apagá-la ou clique para quebrá-la.</p>
     </body>
 </html>
