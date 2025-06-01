@@ -6,6 +6,7 @@
         <title>Tudo sobre Google Glass</title>
         <link rel="stylesheet" href="_css/estilo.css">
     </head>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
     <body>
         <div id="interface">
             <header id="cabecalho">
@@ -19,11 +20,21 @@
                 <nav id="menu">
                     <h1>Menu Principal</h1>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="specs.html">Especificações</a></li>
-                        <li><a href="fotos.html">Fotos</a></li>
-                        <li><a href="multimidia.html">Multimídia</a></li>
-                        <li><a href="fale-conosco.html">Fale conosco</a></li>
+                        <li onmouseover="mudaFoto('home')" onmouseout="mudaFoto('padrao')">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li onmouseover="mudaFoto('especificacoes')" onmouseout="mudaFoto('padrao')">
+                            <a href="specs.html">Especificações</a>
+                        </li>
+                        <li onmouseover="mudaFoto('fotos')" onmouseout="mudaFoto('padrao')">
+                            <a href="fotos.html">Fotos</a>
+                        </li>
+                        <li onmouseover="mudaFoto('multimidia')" onmouseout="mudaFoto('padrao')">
+                            <a href="multimidia.html">Multimídia</a>
+                        </li>
+                        <li onmouseover="mudaFoto('contato')" onmouseout="mudaFoto('padrao')">
+                            <a href="fale-conosco.html">Fale conosco</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -105,7 +116,7 @@
                 <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
             </aside>
             <footer id="rodape">
-                <p>Copyright &copy; 2013 - by Jonathan Souza <br>
+                <p>Copyright &copy; 2025 - by Jonathan Souza <br>
                 <a href="https://www.linkedin.com/in/jonathan-souza-3b1882184/" target="_blank" rel="noopener">Linkedin</a> | 
                 <a href="https://github.com/Jonathanssz" target="_blank" rel="noopener">Github</a></p>
             </footer>
