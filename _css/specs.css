@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+section#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+
+div.esquema {
+    position: relative;
+    display: inline-block;
+}
+
+div.esquema img {
+    display: inline-block;
+}
+
+div.esquema a.area {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+div.esquema a.tela {
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    width: 500px; /* Tamanho da imagem base */
+    height: 300px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    clip-path: polygon(
+        40% 45%, 
+        17% 72%, 
+        17% 84%, 
+        5% 57%
+    );
+}
+
+div.esquema a.camera {
+    top: 230px;
+    left: 145px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+div.esquema a.sensores {
+    position: absolute;
+    width: 500px; /* Tamanho da imagem base */
+    height: 300px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    clip-path: polygon(
+        5% 45%, 
+        17% 72%, 
+        17% 84%, 
+        5% 57%
+    );
+}
+
+div.esquema a.gadgets {
+    top: 38px;
+    left: 63px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+div.esquema a.tela:active,
+div.esquema a.camera:active,
+div.esquema a.sensores:active,
+div.esquema a.gadgets:active {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+iframe#frame-spec {
+    width: 400px;
+    height: 280px;
+    border: none;
+}
