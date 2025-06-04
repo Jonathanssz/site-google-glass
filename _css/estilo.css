@@ -246,3 +246,21 @@ footer#rodape {
 footer#rodape p {
     text-align: center;
 }
+
+/* Formatação de Vídeos e Áudios */
+
+div#multimidia video#video-01 {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: -5px;
+    width: 500px;
+}
+
+div#multimidia video#video-02 {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 350px;
+}
