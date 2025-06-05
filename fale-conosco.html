@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tudo sobre Google Glass</title>
         <link rel="stylesheet" href="_css/estilo.css">
+        <link rel="stylesheet" href="_css/form.css">
     </head>
     <script language="javascript" src="_javascript/funcoes.js"></script>
     <body>
@@ -15,7 +16,7 @@
                     <h2>A revolução do Google está chegando</h2>
                 </hgroup>
 
-                <img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="Google Glass óculos preto pequeno">
+                <img id="icone" src="_imagens/contato.png" alt="Ícone de um telefone">
 
                 <nav id="menu">
                     <h1>Menu Principal</h1>
@@ -39,38 +40,86 @@
                 </nav>
             </header>
 
-            Fale Conosco > Contato
-            Formulário de Contato
-            por Gustavo Guanabara
-            Atualizado em 01/Maio/2013
-
-            Identificação do Usuário
-                Nome:
-                Senha:
-                E-mail:
-                Sexo:
-                    - Masculino
-                    - Feminino
-                Data de Nascimento:
-
-            Endereço do Usuário
-                Logradouro:
-                Número:
-                Estado:
-                Cidade:
-
-            Mensagem do Usuário
-                Grau de Urgência:
-                Mensagem:
-
-            Quero um Google Glass
-                Gostaria de adquirir um Google Glass quando disponível
-                Cor:
-                Quantidade:
-                Preço Total: R$
-
-
-            [BOTÃO ENVIAR]
+            <section id="corpo-full">
+                <article id="noticia-1">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                            <h3>Fale Conosco > Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>por Jonathan Souza</h2>
+                            <h3 class="direita">Atualizado em 04/Junho/2025</h3>
+                        </hgroup>
+                    </header>
+                    
+                    <form action="">
+                        <fieldset id="usuario">
+                            <legend>Identificação do Usuário</legend>
+                                <p>
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" name="inNome" id="nome" title="Campo Nome" placeholder="Digite seu nome" size="50" maxlength="30" required/>
+                                </p>
+                                <p>
+                                    <label for="senha">Senha:</label>
+                                    <input type="password" name="inSenha" id="senha" title="Campo Senha" placeholder="Digite sua senha" size="50" maxlength="8" required/>
+                                </p>
+                                <p>
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" name="inEmail" id="email" title="Campo E-mail" placeholder="Digite seu e-mail" size="50" maxlength="40" required/>
+                                </p>
+                                <fieldset id="genero" required>
+                                    <legend>Gênero:</legend>
+                                    <input type="radio" id="masculino" name="genero" value="Masculino">
+                                    <label for="masculino">Masculino</label>
+                                    <br>
+                                    <input type="radio" id="feminino" name="genero" value="Feminino">
+                                    <label for="feminino">Feminino</label>
+                                    <br>
+                                    <input type="radio" id="outros" name="genero" value="Outros">
+                                    <label for="outros">Outros</label>
+                                </fieldset>
+                                <p>
+                                    <label for="data">Data de Nascimento:</label>
+                                    <input type="date" name="inData" id="data" title="Campo Data de Nascimento" required/>
+                                </p>
+                        </fieldset>
+                        <fieldset id="endereco">
+                            <legend>Endereço do Usuário</legend>
+                                <p>
+                                    <label for="cep">CEP:</label>
+                                    <input type="text" id="cep" name="inCep" title="Campo CEP" placeholder="00000-000" maxlength="9">
+                                </p>
+                                <p>
+                                    <label for="bairro">Bairro:</label>
+                                    <input type="text" id="bairro" name="inBairro" title="Campo Bairro" placeholder="Digite o nome do bairro" size="50" maxlength="30"/>
+                                </p>
+                                <p>
+                                    <label for="rua">Logradouro:</label>
+                                    <input type="text" id="rua" name="inRua" title="Campo Logradouro" placeholder="Digite o nome da Rua, Avenida, Travessa, etc." size="50" maxlength="50"/>
+                                </p>
+                                <p>
+                                    <label for="numero">Número:</label>
+                                    <input type="number" id="numero" name="inNumero" title="Campo Número da Casa" placeholder="Digite o número da residência" size="10" minlength="0" maxlength="99999"/>
+                                </p>
+                                Estado:
+                                Cidade:
+                        </fieldset>
+                        <fieldset id="mensagem">
+                            <legend>Mensagem do Usuário</legend>
+                                Grau de Urgência:
+                                Mensagem:
+                        </fieldset>
+                        <fieldset id="pedido">
+                            <legend>Quero um Google Glass</legend>
+                                Gostaria de adquirir um Google Glass quando disponível
+                                Cor:
+                                Quantidade:
+                                Preço Total: R$
+                        </fieldset>
+                        [BOTÃO ENVIAR]
+                    </form>
+                    
+                </article>
+            </section>
 
             <footer id="rodape">
                 <p>Copyright &copy; 2025 - by Jonathan Souza <br>
