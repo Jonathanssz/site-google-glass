@@ -1,3 +1,4 @@
-Site_HTML5
+Site do Google Glass
 
-Aqui serão feitos estudos com HTML5 + CSS3 + JavaScript.
+Este projeto faz parte de um estudo de HTML5 + CSS3 + JavaScript.
+É um site que faz a divulgação do Google Glass.
